@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background: #999;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* default for all screens unless overriden & for viewport 1464 px and more ---------------- */
+.container{
+    background: #fff;
+    width: 90%;
+    max-width: 1240px;
+    height: max-content;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.demoItem{
+    background: #eee;
+    border: 1px solid #999;
+    border-radius: 10px;
+    height: 100px;
+    width: 24%;
+}
+
+/* for large screen viewport 1080-1463 px ---------------- */
+@media only screen and (min-width: 1080px) and (max-width:1463px){
+
+.demoItem{
+    width: 49%;
+}
+
+}
+
+/* for small screen viewport 1079 px and less ---------------- */
+@media only screen and (max-width:1079px){
+
+    .demoItem{
+        width: 98%;
+        }
+    
+}
